@@ -4,3 +4,7 @@ __pycache__/
 status-ledger.jsonl
 *.db
 .DS_Store
+# Status OS local runtime files
+statusos_anchor.db
+statusos_anchor.db-shm
+statusos_anchor.db-wal
