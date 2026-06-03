@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Status OS Task Manifest",
+  "type": "object",
+  "required": [
+    "task_id",
+    "name",
+    "type",
+    "host_device",
+    "state",
+    "requirements",
+    "allowed_resume_modes"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "host_device": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "requirements": {
+      "type": "object"
+    },
+    "allowed_resume_modes": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "native",
+          "remote",
+          "stream",
+          "checkpoint",
+          "view_only",
+          "stasis",
+          "blocked"
+        ]
+      }
+    }
+  }
+}
