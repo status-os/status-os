@@ -1,0 +1,105 @@
+{
+  "tasks": [
+    {
+      "task_id": "document-workspace",
+      "name": "Document Workspace",
+      "type": "document",
+      "host_device": "status-anchor",
+      "state": "available",
+      "requirements": {
+        "ram_mb_min": 1024,
+        "gpu_required": false,
+        "display_min_width": 600,
+        "display_min_height": 400,
+        "latency_ms_max": 200,
+        "input": {
+          "keyboard": false,
+          "pointer": false,
+          "touch": false
+        }
+      },
+      "allowed_resume_modes": [
+        "native",
+        "remote",
+        "view_only"
+      ]
+    },
+    {
+      "task_id": "trading-workspace",
+      "name": "Trading Workspace",
+      "type": "trading",
+      "host_device": "msi-workstation",
+      "state": "running",
+      "requirements": {
+        "ram_mb_min": 4096,
+        "gpu_required": false,
+        "display_min_width": 1280,
+        "display_min_height": 720,
+        "latency_ms_max": 120,
+        "input": {
+          "keyboard": true,
+          "pointer": true,
+          "touch": false
+        }
+      },
+      "allowed_resume_modes": [
+        "native",
+        "remote",
+        "stream",
+        "view_only",
+        "stasis"
+      ]
+    },
+    {
+      "task_id": "game-workspace",
+      "name": "Game Workspace",
+      "type": "game",
+      "host_device": "msi-workstation",
+      "state": "running",
+      "requirements": {
+        "ram_mb_min": 16000,
+        "gpu_required": true,
+        "display_min_width": 1280,
+        "display_min_height": 720,
+        "latency_ms_max": 60,
+        "input": {
+          "keyboard": true,
+          "pointer": true,
+          "touch": false
+        }
+      },
+      "allowed_resume_modes": [
+        "native",
+        "stream",
+        "remote",
+        "view_only",
+        "stasis"
+      ]
+    },
+    {
+      "task_id": "ai-workspace",
+      "name": "AI Workspace",
+      "type": "ai",
+      "host_device": "status-anchor",
+      "state": "available",
+      "requirements": {
+        "ram_mb_min": 8192,
+        "gpu_required": false,
+        "display_min_width": 800,
+        "display_min_height": 600,
+        "latency_ms_max": 150,
+        "input": {
+          "keyboard": true,
+          "pointer": false,
+          "touch": false
+        }
+      },
+      "allowed_resume_modes": [
+        "native",
+        "remote",
+        "view_only",
+        "stasis"
+      ]
+    }
+  ]
+}

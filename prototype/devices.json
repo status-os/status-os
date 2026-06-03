@@ -1,0 +1,101 @@
+{
+  "devices": [
+    {
+      "device_id": "phone-01",
+      "device_type": "phone",
+      "os": "android",
+      "cpu_arch": "arm64",
+      "cpu_threads": 8,
+      "ram_mb": 6144,
+      "gpu_class": "mobile",
+      "display": {
+        "width": 1080,
+        "height": 2400
+      },
+      "input": {
+        "keyboard": false,
+        "pointer": false,
+        "touch": true,
+        "gamepad": false
+      },
+      "network": {
+        "latency_ms": 45,
+        "bandwidth_mbps": 80
+      },
+      "trust": {
+        "owner_verified": true,
+        "disk_encrypted": true
+      },
+      "features": {
+        "remote_desktop": true,
+        "stream_decode": true,
+        "checkpoint_restore": false
+      }
+    },
+    {
+      "device_id": "old-laptop-01",
+      "device_type": "laptop",
+      "os": "linux",
+      "cpu_arch": "x86_64",
+      "cpu_threads": 4,
+      "ram_mb": 8192,
+      "gpu_class": "integrated",
+      "display": {
+        "width": 1366,
+        "height": 768
+      },
+      "input": {
+        "keyboard": true,
+        "pointer": true,
+        "touch": false,
+        "gamepad": false
+      },
+      "network": {
+        "latency_ms": 18,
+        "bandwidth_mbps": 120
+      },
+      "trust": {
+        "owner_verified": true,
+        "disk_encrypted": false
+      },
+      "features": {
+        "remote_desktop": true,
+        "stream_decode": true,
+        "checkpoint_restore": false
+      }
+    },
+    {
+      "device_id": "msi-workstation",
+      "device_type": "desktop",
+      "os": "linux/windows",
+      "cpu_arch": "x86_64",
+      "cpu_threads": 12,
+      "ram_mb": 32768,
+      "gpu_class": "dedicated",
+      "display": {
+        "width": 1920,
+        "height": 1080
+      },
+      "input": {
+        "keyboard": true,
+        "pointer": true,
+        "touch": false,
+        "gamepad": true
+      },
+      "network": {
+        "latency_ms": 3,
+        "bandwidth_mbps": 1000
+      },
+      "trust": {
+        "owner_verified": true,
+        "disk_encrypted": true
+      },
+      "features": {
+        "remote_desktop": true,
+        "stream_decode": true,
+        "stream_host": true,
+        "checkpoint_restore": true
+      }
+    }
+  ]
+}
