@@ -42,3 +42,25 @@ http://127.0.0.1:8765
 ## Commit message
 
 Add v0.1 local Status Anchor dashboard
+
+Initial dashboard prototype prepared.
+
+Adds:
+- local-only web dashboard
+- device/task/resume-mode table
+- blocked/stasis reasons
+- ledger event hash preview
+
+Patch:
+status-os-v0.1-dashboard-patch.zip
+
+Run:
+python prototype/statusos_dashboard.py --devices prototype/examples/devices.json --tasks prototype/examples/tasks.json
+
+Open:
+http://127.0.0.1:8765
+
+Scope:
+- local-only
+- no authentication yet
+- no remote execution yet
