@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+status-ledger.jsonl
+*.db
+.DS_Store
